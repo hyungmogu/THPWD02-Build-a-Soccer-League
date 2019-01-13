@@ -1,6 +1,6 @@
 # THPWD02 - Build a Soccer League
 
-This is a second project to team tree house's Python Web Tech Degree
+This is the second project to team tree house's Python Web Tech Degree
 
 ## Objectives
 - Divide the 18 children who have signed up for the league into three even teams - Dragons, Sharks and Raptors. The number of experienced and inexperienced players per team must be equal.

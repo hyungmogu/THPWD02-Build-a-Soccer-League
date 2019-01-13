@@ -1,4 +1,4 @@
-# THPWD02-Build-a-Soccer-League
+# THPWD02 - Build a Soccer League
 
 This is a second project to team tree house's Python Web Tech Degree
 

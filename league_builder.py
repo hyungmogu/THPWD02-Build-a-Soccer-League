@@ -36,10 +36,10 @@ if __name__ == "__main__":
 
     # 1. separate players by experience
     players_experienced = get_experienced(players)
-    players_experienced_per_team = len(players_experienced) / len(teams)
+    players_experienced_per_team = int(len(players_experienced) / len(teams))
 
     players_inexperienced = get_inexperienced(players)
-    players_inexperienced_per_team = len(players_inexperienced) / len(teams)
+    players_inexperienced_per_team = int(len(players_inexperienced) / len(teams))
 
     # 2. add equal number of experienced, and inexperienced players to teams
     for index, team in enumerate(teams):
@@ -52,7 +52,7 @@ if __name__ == "__main__":
         players_by_team.update({team: players_by_team[team] + players_experienced[slice_start_experienced:slice_end_experienced]})
         players_by_team.update({team: players_by_team[team] + players_inexperienced[slice_start_inexperienced:slice_end_inexperienced]})
 
-    # 3. add players to files in the following format
+    # 3. add players to file in the following format
     # TEAM
     # NAME, EXPERIENCE, GUARDIAN NAMES
     with open("teams.txt", "a") as textFile:
